@@ -1,0 +1,83 @@
+input{
+    display: block;
+    height: 30px;
+    width: 250px;
+    margin-top: 10px;
+    border: none;
+padding-top: 1%;
+border-radius: 30px;
+
+    
+}
+form::before
+{
+    content: '';
+    position: absolute;
+    bottom: -1%;
+    right:3%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: -1;
+   
+    background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.872), yellow);
+    animation: 3s linear 2s alternate;
+    animation-name: example; 
+    animation-duration: 15s;
+    /* animation: 4s linear  4s linear 2s alternate-reverse ; */
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0%   { background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.872), yellow); right:10px; bottom:10px;}
+    25%  { background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.872), yellow); right:1100px; bottom:10px;}
+   50%  { background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.872), rgba(220, 142, 155, 0.689));right:20px; bottom:200px;}
+  70%  { background-image: linear-gradient(to bottom left, rgba(255, 0, 0, 0.872), rgba(255, 192, 203, 0.726)); right:20px; bottom:200px;}
+    100% { background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.872), yellow); right:200px; bottom:0px;}
+  }
+  
+
+form::after
+{
+    content: '';
+    position: absolute;
+    top: 10%;
+    left:3%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: -1;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    animation: 3s linear 2s alternate  ;
+    animation-name:em;
+    animation-duration: 15s; 
+  
+   animation-iteration-count: infinite;
+}
+/*  */
+
+@keyframes em {
+    0%   { background-image: linear-gradient(to top left, rgba(255, 0, 0, 0.872), yellow); left:10px;top:10px;}
+    25%  { background-image: linear-gradient(to top left, rgba(255, 0, 0, 0.872), yellow); left:1100px; TOP:10px;}
+   50%  { background-image: linear-gradient(to top left, rgba(255, 0, 0, 0.872), yellow);left:20px; top:200px;}
+   70%  { background-image: linear-gradient(to top left, rgba(255, 0, 0, 0.872), yellow); left:0px; top:20px;}
+100% { background-image: linear-gradient(to top right, rgba(255, 0, 0, 0.872), yellow); left:0px; top:0px;}
+  }
+   
+
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-image: linear-gradient(to bottom right, rgba(255, 0, 0, 0.772), rgba(255, 255, 0, 0.393));   
+
+
+
+}
+form{
+padding: 40px;
+border: 1px solid white;
+background-color: rgba(255, 255, 255, 0.26);
+border-radius: 20%;
+
+}

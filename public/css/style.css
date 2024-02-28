@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+}
+.header {
+  overflow: hidden;
+  background-color: #31304d;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 30px;
+  font-family: serif;
+  background: #ebe4d1;
+}
+.icon {
+  margin-right: 1%;
+  width: 50px;
+  height: 60px;
+}
+.div {
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: space-around;
+  background: #ebe4d1;
+}
+.div2 {
+  margin-top: 0px;
+  margin-bottom: 0%;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  font-family: serif;
+  background: #ebe4d1;
+}
+.p {
+  font-size: 30px;
+  padding-bottom: 30px;
+  font-family: serif;
+}
+.gallerybox {
+  white-space: nowrap;
+  overflow-x: auto;
+  margin-right: 20px;
+ 
+}
+.imgbox a{
+  transform: scale(1.2);
+}
+.imgbox img {
+  width: 280px;
+  height: 200px;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+.container {
+  float: left;
+  /* overflow-x: auto; */
+  width: 30.33%;
+  padding: 8px;
+  padding-bottom: 10%;
+}
+.nxt {
+  padding: 50px;
+}
+
+h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+.service .item p {
+  text-align: justify;
+  font-size: 15.5px;
+  color: #111;
+}
+
+
+#img1 {
+  background: url(crack.jpg) 100% 100% white;
+  margin-top: 0%;
+
+  background-size: cover;
+  text-align: center;
+  font-size: 5rem;
+  color: #ddd;
+}
+.width {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+#order {
+  width: fit-content;
+  margin-left: 43%;
+  margin-right: 10%;
+  padding-left: 3%;
+  padding-right: 3%;
+  border: 50% solid black;
+  transition: transform .2s;
+  background: linear-gradient(#eeca1cf5, #eeca1cf5);
+}
+#order a {
+  text-decoration: none;
+
+}
+#order:hover {
+   color: white;
+  border-radius: 40%;
+  transform: scale(1.6,1.2);
+}
+.row {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.h1 {
+  margin-left: 38%;
+  margin-right: 15%;
+  font-weight: 1000px;
+  font-style: oblique;
+}

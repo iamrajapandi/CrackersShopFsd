@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="img/bigili.jpeg">
+  <link rel="stylesheet" href="../css/list.css">
+  <style>
+    .container {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+    }
+
+
+    .container:hover input~.checkmark {
+      background-color: #ccc;
+    }
+
+
+    .container input:checked~.checkmark {
+      background-color: #2196F3;
+    }
+
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .container input:checked~.checkmark:after {
+      display: block;
+    }
+
+
+    .container .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  </style>
+
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th>Items</th>
+      <th>Select the Items</th>
+    </tr>
+    <tr style="background-color: #eeca1cf5;">
+      <td colspan="2">
+        <h2>Combo pack <strong>40%</strong></h2>
+      </td>
+    </tr>
+    <tr>
+      <td><label class="container"> Adult pack mini</label></td>
+      <td><input type="checkbox">
+        <span class="checkmark"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+        <label class="container"> Children Pack mini</label>
+      </td>
+      <td>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label class="container"> Family Pack mini
+        </label>
+      </td>
+      <td>
+        <input type="checkbox">
+        <span class="checkmark"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+                <label class="container"> Adult Pack Jumbo
+        </label>
+      </td>
+      <td>
+                <input type="checkbox">
+        <span class="checkmark"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label class="container"> Family pack jumbo
+        </label>
+      </td>
+      <td>
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</td>
+    </tr>
+    <tr style="background-color: #eeca1cf5;">
+      <td colspan="2">
+        <h2>One sound Crackers <strong>40%</strong></h2>
+      </td>
+    </tr>
+<tr>
+  <td>
+
+    <label class="container"> 2 Sound
+    </label>
+  </td>
+  <td>
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label class="container"> 3 1/2'' lakshmi
+    </label>
+  </td>
+  <td>
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label class="container"> 4'' lakshmi
+    </label>
+  </td>
+  <td>
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label class="container"> delux lakshmi
+    </label>
+  </td>
+  <td>
+
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label class="container">kuruvi
+    </label>
+  </td>
+  <td>
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </td>
+</tr>
+
+<tr style="background-color: #eeca1cf5;">
+  <td colspan="7">
+      <h2>Bomb</h2>
+  </td>
+</tr>
+
+<tr>
+  <td>
+    <label class="container">  Atom Bomb 
+    </label>
+  </td>
+  <td>
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </td>
+</tr>
+<tr>
+  <td>
+    <label class="container">  Hydro Bomb 
+    </label>
+  </td>
+  <td>
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </td>
+</tr>
+<tr>
+  <td>
+
+    <label class="container">
+      Classic Bomb
+    </label>
+  </td>
+  <td>
+    <input type="checkbox">
+   <span class="checkmark"></span>
+  </td>
+</tr>
+<label class="container">
+  Paper Bomb <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  Colour Bomb <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<h2>Flower Pot</h2>
+<label class="container">
+  FP small <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  FP big <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  FP Ashoka <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  FP Giant<input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<label class="container">
+  FP Special<input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+<h2>Chorsa</h2>
+<label class="container">
+  28 Chorsha<input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+</table>
+</body>
+
+</html>
